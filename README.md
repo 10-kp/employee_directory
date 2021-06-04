@@ -1,7 +1,6 @@
-[![](https://img.shields.io/badge/javascript-79%25-yellow)]()
-[![](https://img.shields.io/badge/html-15%25-blue)]()
-[![](https://img.shields.io/badge/CSS-5%25-red)]()
-[![](https://img.shields.io/badge/shell-1%25-red)]()
+[![](https://img.shields.io/badge/javascript-XX%25-yellow)]()
+[![](https://img.shields.io/badge/html-XX%25-blue)]()
+[![](https://img.shields.io/badge/CSS-XX%25-red)]()
 
 ## Table of Contents
 
@@ -79,7 +78,7 @@ Feel free to clone or fork this repo if you find it useful. To install dependenc
 
 ## Link
 
-You can see the link of this app [URL]()
+You can see the link of this app [LINK](https://10-kp.github.io/employee_directory/)
 
 [GitHub](https://github.com/10-kp/employee-directory)
 
