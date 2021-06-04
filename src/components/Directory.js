@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import Main from './Main';
-// import Search from './Search';
+import Search from './Search';
 import API from '../utils/API';
-// import './style.css';
 
 class Directory extends Component {
   // Setting the component's initial state
