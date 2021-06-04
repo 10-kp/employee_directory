@@ -12,19 +12,18 @@ const Employees = (props) => {
     return formattedDate;
   }
   return (
-    <tr className="tr">
-    <td>
-      <img alt={props.firstName} src={props.icon} />
-    </td>
-    <td>
-      {props.firstName} {props.lastName}
-    </td>
-    <td>{props.email}</td>
-    <td>{props.phone} </td>
-    <td>{props.address}</td>
-  </tr>
-);
-  )
+    <tr className='tr'>
+      <td>
+        <img alt={props.firstName} src={props.icon} />
+      </td>
+      <td>
+        {props.firstName} {props.lastName}
+      </td>
+      <td>{props.email}</td>
+      <td>{props.phone} </td>
+      <td>{props.address}</td>
+    </tr>
+  );
 };
 
 export default Main;
