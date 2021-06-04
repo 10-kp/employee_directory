@@ -26,4 +26,4 @@ const Employees = (props) => {
   );
 };
 
-export default Main;
+export default Employees;

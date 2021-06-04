@@ -11,10 +11,12 @@ class Directory extends Component {
     empSort: [],
   };
 
-  // When the component mounts, load the next dog to be displayed
+  // To check component rendered at least once, and pull in data
   componentDidMount = () => {
-    this.setState({
-      employees: results.data.results,
+    API.getUsers().then((results) => {
+      this.setState({
+        employees: results.data.results,
+      });
     });
   };
   // Sort through employees based on search term
