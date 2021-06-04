@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Main from './Main';
+import Employees from './Employees';
 import Search from './Search';
 import API from '../utils/API';
 
@@ -12,13 +12,22 @@ class Directory extends Component {
   };
 
   // To check component rendered at least once, and pull in data
-  componentDidMount = () => {
-    API.getUsers().then((results) => {
-      this.setState({
-        employees: results.data.results,
-      });
-    });
+  componentDidMount() {
+    this.searchEmployees('employees');
+  }
+
+  searchEmployees = (query) => {
+    API.search(query)
+      .then((res) => this.setState({ results: res.data.data }))
+      .catch((err) => console.log(err));
   };
+  // componentDidMount = () => {
+  //   API.getUsers().then((results) => {
+  //     this.setState({
+  //       employees: results.data.results,
+  //     });
+  //   });
+  // };
   // Sort through employees based on search term
   // Check for match and set for rendering
   sortEmp = () => {
