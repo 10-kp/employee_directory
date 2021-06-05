@@ -1,6 +1,6 @@
-[![](https://img.shields.io/badge/javascript-XX%25-yellow)]()
-[![](https://img.shields.io/badge/html-XX%25-blue)]()
-[![](https://img.shields.io/badge/CSS-XX%25-red)]()
+[![](https://img.shields.io/badge/javascript-56%25-yellow)]()
+[![](https://img.shields.io/badge/html-28%25-blue)]()
+[![](https://img.shields.io/badge/CSS-15%25-red)]()
 
 ## Table of Contents
 
@@ -13,8 +13,7 @@
 
 ## Description
 
-Create an employee directory with React. Break up application's UI into components, manage component state, and respond to user events. View entire employee directory at once to have quick access to their information. Given a table of random users generated from the Random User API, when the user loads the page, a table of employees should render.
-The user should be able to Sort the table by at least one category and filter the users by at least one property.
+This project creates a React web application that allows the user to visualize all Employees details, search by keyword and filter results.
 
 ## Installation
 
@@ -80,7 +79,7 @@ Feel free to clone or fork this repo if you find it useful. To install dependenc
 
 You can see the link of this app [LINK](https://10-kp.github.io/employee_directory/)
 
-[GitHub](https://github.com/10-kp/employee-directory)
+[GitHub](https://github.com/10-kp/employee_directory)
 
 # Getting Started with Create React App
 
