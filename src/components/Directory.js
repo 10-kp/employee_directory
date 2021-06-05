@@ -9,25 +9,16 @@ class Directory extends Component {
     employees: [],
     search: '',
     empSort: [],
+    sorted: false,
   };
 
-  // To check component rendered at least once, and pull in data
+  // To pull in data
   componentDidMount() {
-    this.searchEmployees('employees');
+    API.getRandomUsers()
+      .then((res) => this.setState({ employees: res.data.data }))
+      .catch((err) => console.log(err));
   }
 
-  searchEmployees = (query) => {
-    API.search(query)
-      .then((res) => this.setState({ results: res.data.data }))
-      .catch((err) => console.log(err));
-  };
-  // componentDidMount = () => {
-  //   API.getUsers().then((results) => {
-  //     this.setState({
-  //       employees: results.data.results,
-  //     });
-  //   });
-  // };
   // Sort through employees based on search term
   // Check for match and set for rendering
   sortEmp = () => {
@@ -42,7 +33,7 @@ class Directory extends Component {
     this.setState({ empSort });
   };
 
-  // grab search term, activate sorted
+  // Grab search term and activate sorted
   startSort = (event) => {
     this.setState({ search: event.target.value }, () => {
       this.sortEmp();
@@ -55,13 +46,14 @@ class Directory extends Component {
     return (
       <div className='background'>
         <div className='jumbotron jumbotron-fluid'>
-          <h2 className='display-4'>Employee Directory</h2>
+          <h2 className='display-3'>Employee Directory</h2>
           <p> Search for an employee by entering their name or email below.</p>
+
           <Search name='search' startSort={this.startSort} label='Search' />
         </div>
 
         <div className='container-fluid'>
-          <table className='table table-dark table-striped table-hover table-bordered table-condensed'>
+          <table className='table table-light table-striped table-hover table-bordered table-condensed'>
             <thead className='thead'>
               <tr>
                 <th>Image</th>
