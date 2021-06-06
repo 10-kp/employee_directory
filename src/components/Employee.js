@@ -24,7 +24,7 @@ handleInputChange = (event) => {
 
 // Sort By First Name
 sortByFirstName = () => {
-    const sortedEmployees = this.state.results.sort((a, b) => {
+    const sortEmployees = this.state.results.sort((a, b) => {
       if (b.name.first > a.name.first) {
         return -1
       }
@@ -35,17 +35,17 @@ sortByFirstName = () => {
     });
 
     if (this.state.sortOrder === "DESC") {
-      sortedEmployees.reverse();
+      sortEmployees.reverse();
       this.setState({ sortOrder: "ASC" });
     } else {
       this.setState({ sortOrder: "DESC" });
     }
-    this.setState({ results: sortedEmployees })
+    this.setState({ results: sortEmployees })
   }
 
     //Sort by last name 
     sortByLastName = () => {
-        const sortedEmployees = this.state.results.sort((a, b) => {
+        const sortEmployees = this.state.results.sort((a, b) => {
           if (b.name.last > a.name.last) {
             return -1
           }
@@ -55,12 +55,12 @@ sortByFirstName = () => {
           return 0;
         });
         if (this.state.sortOrder === "DESC") {
-          sortedEmployees.reverse();
+          sortEmployees.reverse();
           this.setState({ sortOrder: "ASC" });
         } else {
           this.setState({ sortOrder: "DESC" });
         }
-        this.setState({ results: sortedEmployees })
+        this.setState({ results: sortEmployees })
       }
 
 // Add filterEmployee function
@@ -81,8 +81,8 @@ handleFormSubmit = (event) => {
             <thead>
               <tr>
                 <th>Image</th>
-                <th>First Name <span className="downArrow" onClick={this.sortByFName}></span></th>
-                <th>Last Name <span className="downArrow" onClick={this.sortByLName}></span></th>
+                <th>First Name <span className="downArrow" onClick={this.sortByFirstName}></span></th>
+                <th>Last Name <span className="downArrow" onClick={this.sortByLastName}></span></th>
                 <th>Phone</th>
                 <th>Email</th>
                 <th>DOB </th>
