@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import API from '../utils/API';
 import Search from './Search';
-import DateFormat from 'dateformat';
 
 // Setting the component's initial state
 class Employee extends Component {
