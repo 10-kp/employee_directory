@@ -1,13 +1,13 @@
 import React from 'react';
-import '../styles/mainPage.css';
+import '../styles/title.css';
 
-function MainPage() {
+function Title() {
   return (
     <div>
       <div className='jumbotron jumbotron-fluid' id='jumboTron'>
         <div className='container'>
           <h1 className='display-4'>
-            <i className='fas fa-user-friends'></i> <b>Employee Directory</b>
+            <i className='fas fa-user-friends'></i> <b>Company Directory</b>
           </h1>
           <p className='lead'>
             Search by first or last name or select a column heading to sort.
@@ -18,4 +18,4 @@ function MainPage() {
   );
 }
 
-export default MainPage;
+export default Title;

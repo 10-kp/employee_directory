@@ -5,7 +5,7 @@ const Search = (props) => {
   return (
     <form>
       <div className='form-group search-widget'>
-        <div className='input-group mb-4'>
+        <div className='input-group mb-3'>
           <input
             onChange={props.handleInputChange}
             value={props.search}
