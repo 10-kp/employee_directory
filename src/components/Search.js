@@ -1,9 +1,7 @@
 import React from 'react';
-import '../styles/search.css';
+// import '../styles/search.css';
 
 const SearchBar = (props) => {
-  //const context = useContext(DataAreaContext)
-
   return (
     <form>
       <div className='form-group search-widget'>
