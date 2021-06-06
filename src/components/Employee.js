@@ -13,7 +13,7 @@ class Employee extends Component {
 
   // To pull in API data
   componentDidMount() {
-    API.getRandomUsers().then((res) => {
+    API.EmployeeSearch().then((res) => {
       this.setState({ results: res.data.results });
     });
   }
@@ -73,21 +73,7 @@ class Employee extends Component {
   //Render page
   render() {
     return (
-      <Container>
-        <div>
-          <div className='jumbotron jumbotron-fluid' id='jumboTron'>
-            <div className='container'>
-              <h1 className='display-4'>
-                <i className='fas fa-user-friends'></i>{' '}
-                <b>Employee Directory</b>
-              </h1>
-              <p className='lead'>
-                Search by first or last name or select a column heading to sort.
-              </p>
-            </div>
-          </div>
-        </div>
-
+      <div>
         <Search
           handleInputChange={this.handleInputChange}
           search={this.state.search}
@@ -114,7 +100,6 @@ class Employee extends Component {
                 </th>
                 <th>Phone</th>
                 <th>Email</th>
-                <th>DOB </th>
               </tr>
             </thead>
 
@@ -136,7 +121,6 @@ class Employee extends Component {
                         <td>{item.name.last}</td>
                         <td>{item.phone}</td>
                         <td>{item.email}</td>
-                        <td>{DateFormat(item.dob.date, 'mediumDate')}</td>
                       </tr>
                     </tbody>
                   ) : //Last Name sort
@@ -154,7 +138,6 @@ class Employee extends Component {
                         <td>{item.name.last}</td>
                         <td>{item.phone} </td>
                         <td>{item.email}</td>
-                        <td>{DateFormat(item.dob.date, 'mediumDate')}</td>
                       </tr>
                     </tbody>
                   ) : null
@@ -162,7 +145,7 @@ class Employee extends Component {
             }
           </table>
         </div>
-      </Container>
+      </div>
     );
   }
 }
