@@ -33,14 +33,16 @@ The following steps were undertaken to create this program
 
 ## Technologies
 
-- Javascript
-- HTML
-- CSS
-- Bootstrap
-- React.js
+This application uses the following packages:
+
+- [Javascript](https://www.javascript.com/)
+- [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
+- [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
+- [Bootstrap](https://getbootstrap.com/)
+- [React.js](https://reactjs.org/)
 
 ## Link
 
 You can see the link of this app [LINK](https://10-kp.github.io/employee_directory/)
 
-[GITHUB](https://github.com/10-kp/employee_directory)
+You can view the GitHub here [GITHUB](https://github.com/10-kp/employee_directory)
