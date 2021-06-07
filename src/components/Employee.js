@@ -12,7 +12,7 @@ class Employee extends Component {
     sortOrder: '',
   };
 
-  // To pull in API data
+  // Pull in the API data
   componentDidMount() {
     API.EmployeeSearch().then((res) => {
       this.setState({ results: res.data.results });
