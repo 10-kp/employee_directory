@@ -13,7 +13,7 @@
 
 This project creates a React web application that allows the user to visualize Employees details, search by keyword and filter results.
 
-![Screenshot]()
+![Screenshot](assets/home-pagesnap.png)
 
 ## Installation
 
