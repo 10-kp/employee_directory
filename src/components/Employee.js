@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import API from '../utils/API';
 import Search from './Search';
+import Title from './Title';
 import '../styles/table.css';
 
 // Setting the component's initial state
@@ -74,6 +75,7 @@ class Employee extends Component {
   render() {
     return (
       <div>
+        <Title />
         <Search
           handleInputChange={this.handleInputChange}
           search={this.state.search}
